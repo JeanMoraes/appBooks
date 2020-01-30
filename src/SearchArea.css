@@ -1,0 +1,34 @@
+.search-area{
+    background-color: #333;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-area form input{
+    padding: 15px;
+    border-radius: 1px;
+    border: 0;
+    margin-right: 5px;
+    height: 45px;
+    width: 500px; 
+}
+
+.search-area form input::placeholder{
+    color: #999;
+    text-transform: uppercase;
+}
+
+.search-area form button{
+    width: 75px;
+    height: 75px;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+.search-area form button i{
+    font-size: 15px;
+    color: #fff;
+}
