@@ -1,0 +1,23 @@
+header{
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e74c3c;
+    border-bottom: 2px solid ##c0392b;
+}
+
+header i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+header h1{
+    font-family: Roboto;
+    font-weight: normal;
+    color: #fff;
+}
