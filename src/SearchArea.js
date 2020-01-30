@@ -1,16 +1,15 @@
 import React from 'react';
 import "./SearchArea.css";
 
-const SearchArea = () => {
+const SearchArea = (props) => {
     return(
         <div className="search-area">
-            <form action="">
-                <input type="text" placeholder="Digite o título do livro aqui..." />
+            <form onSubmit={ props.searchBook } action="">
+                <input onChange={props.handleSearch} type="text" placeholder="Digite o título do livro aqui..." />
                 <button type="submit">
-                    <i class="fas fa-search"></i>
+                    <i className="fas fa-search"></i>
                 </button>
             </form>
-
         </div>
     )
 }
