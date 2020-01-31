@@ -1,0 +1,35 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 200px;
+    background-color: #F4f4f4;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+.card-container img{
+    margin-bottom: 10px;
+}
+
+.desc h2, .desc h3, .desc p{
+    font-family: Roboto, sans-serif;
+    line-height: normal;
+    margin: 2px 0;
+}
+
+.desc h2{
+    font-size: 17px;
+}
+
+.desc h3{
+    font-size: 15px;
+    color: #666;
+}
+
+.desc p{
+    font-size: 13px;
+    color: #999;
+}
