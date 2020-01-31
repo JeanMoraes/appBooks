@@ -1,7 +1,6 @@
 .card-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 
     width: 200px;
@@ -32,4 +31,43 @@
 .desc p{
     font-size: 13px;
     color: #999;
+}
+
+.card-container a.btn:hover > .popup{
+    display: block;
+    cursor: pointer;
+}
+
+.btn{
+    font-family: Roboto;
+    width: 80%;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    background-color: #ccc;
+    padding: 50px;
+
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

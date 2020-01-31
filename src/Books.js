@@ -10,14 +10,19 @@ class Books extends Component{
         super(props);
         this.state = {
             books: [],
-            searchField: ''
+            searchField: '',
+            page: 0
         }
     }
 
     searchBook = (e) => {
         e.preventDefault();
 
-        request.get("https://www.googleapis.com/books/v1/volumes").query({ q: this.state.searchField }).then(( data ) => {
+        request
+        .get("https://www.googleapis.com/books/v1/volumes")
+        .query({ q: this.state.searchField })
+        .query({ startIndex: this.state.page })
+        .then(( data ) => {
             //console.log(data);
             this.setState({ books: [...data.body.items]})
         })
@@ -30,10 +35,10 @@ class Books extends Component{
 
     render(){
         return(
-        <div>
+        <>
             <SearchArea searchBook={this.searchBook} handleSearch={this.handleSearch} />
             <BookList books={this.state.books} />
-        </div>
+        </>
         );
     }
 }
